@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Light Yagami Server</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main">
+
+<h1>LIGHT YAGAMI SERVER</h1>
+
+<div class="status">
+<span class="dot"></span>
+Online: 0/20
+</div>
+
+<a class="btn" onclick="copyIP()">Play Now</a>
+<a class="btn" href="https://discord.gg/nbSZTBcM" target="_blank">Join Discord</a>
+<a class="btn" href="ranks.html">View Ranks</a>
+
+</div>
+<script>
+function copyIP() {
+    const ip = "play.lightyagami.fun"; // 👈 PUT YOUR SERVER IP HERE
+    
+    navigator.clipboard.writeText(ip).then(() => {
+        alert("✅ Server IP Copied: " + ip);
+    }).catch(() => {
+        alert("❌ Failed to copy IP");
+    });
+}
+</script>
+
+</body>
+</html>
